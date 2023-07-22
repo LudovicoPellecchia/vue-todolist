@@ -1,0 +1,40 @@
+body{
+    font-family: 'Comic Neue', cursive;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    position: relative;
+    background-position: center;
+    height: 500px;
+    background-image: url(../todobg.jpg);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+header h1 {
+    z-index: 2;
+    position: relative;
+    font-size: 100px;
+    font-weight: 900;
+
+}
+
+header::before{
+    opacity: 0.4;
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(to right, rgb(242, 135, 135), rgb(246, 236, 101));
+}
+
+.todo-input-bar{
+    z-index: 2;
+    margin-top: -100px;
+}
+
+.list-item-container{
+    margin-top: 80px;
+}
