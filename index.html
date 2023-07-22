@@ -35,9 +35,12 @@
 
                 <div class="list-item-container">
                     <ul class="list-item">
-                        <li class="todo-item p-2" v-for="listItem in toDoList"
+                        <li class="todo-item p-2 d-flex" v-for="listItem in toDoList"
                             v-bind:style="(listItem.done=== 'true' ? 'text-decoration: line-through' : '' ) ">
-                            {{listItem.text}}
+                            <div class="listItem-text">{{listItem.text}}</div>
+                            <button class="btn btn-link trash-btn">
+                                <i class="fas fa-trash" @click=""></i>
+                            </button>
                         </li>
                     </ul>
 

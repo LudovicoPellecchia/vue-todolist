@@ -38,3 +38,9 @@ header::before{
 .list-item-container{
     margin-top: 80px;
 }
+
+.listItem-text{
+    display: flex;
+    align-items: center;
+    width: 95%;
+}
